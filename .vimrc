@@ -187,7 +187,5 @@ set nu
 " set path
 set path=$PWD/**
 
-" disable trailing whitespace highlight in vim syntax, better-whitespace is
-" doin that for us
-
+" allow hidden buffers
 set hidden
