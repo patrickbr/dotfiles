@@ -49,7 +49,7 @@ set tm=500
 " adds whitespace between comment and line
 let NERDSpaceDelims=1
 
-"" appearence
+"" appearance
 
 color monokai_custom
 
@@ -108,7 +108,7 @@ filetype on
 filetype plugin on
 
 
-" if YCM is enabled, autload configuration on start
+" if YCM is enabled, autoload configuration on start
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
