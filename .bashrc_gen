@@ -6,7 +6,7 @@ bind -m vi-insert '"jk":vi-movement-mode'
 bind -m vi-command '"gg":beginning-of-history'
 bind -m vi-command '"G":end-of-history'
 
-# simulate some vim commands
+# emulate some vim commands
 bind -m vi-command '"diw":"lbdw"'
 bind -m vi-command '"yiw":"lbyw"'
 
