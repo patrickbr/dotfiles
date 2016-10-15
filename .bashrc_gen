@@ -1,6 +1,7 @@
 # use vi mode for bash
 set -o vi
-# use jj as vi escape
+
+# use jk as vi escape
 bind -m vi-insert '"jk":vi-movement-mode'
 bind -m vi-command '"gg":beginning-of-history'
 bind -m vi-command '"G":end-of-history'
