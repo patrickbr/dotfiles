@@ -75,9 +75,13 @@ com W :w
 com Wq :wq
 com WQ :wq
 com Q :q
+com Qall :qall
 
 " leader key
 let mapleader = "\\"
+
+" use 'jj' as <Esc>
+inoremap jj <Esc>
 
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
