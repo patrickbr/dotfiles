@@ -80,8 +80,8 @@ com Qall :qall
 " leader key
 let mapleader = "\\"
 
-" use 'jj' as <Esc>
-inoremap jj <Esc>
+" use 'jk' as <Esc>
+inoremap jk <Esc>
 
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
