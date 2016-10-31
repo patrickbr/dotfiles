@@ -33,10 +33,13 @@ set bell-style none
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias cd..='cd ..'
+
+# nice weather
+alias weather='curl wttr.in/freiburg'
 
 # check for availability of __git_ps1
 if ! type -t __git_ps1 &>/dev/null; then
