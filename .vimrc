@@ -20,6 +20,12 @@ Plugin 'fatih/vim-go'
 
 "" user interface
 
+" leader key
+let mapleader = "\\"
+
+" use 'jk' as <Esc>
+inoremap jk <Esc>
+
 " highlight current pos and line
 set ruler
 
@@ -48,6 +54,9 @@ set tm=500
 "" nerd commenter
 " adds whitespace between comment and line
 let NERDSpaceDelims=1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDRemoveExtraSpaces = 1
 
 "" appearance
 
@@ -77,11 +86,6 @@ com WQ :wq
 com Q :q
 com Qall :qall
 
-" leader key
-let mapleader = "\\"
-
-" use 'jk' as <Esc>
-inoremap jk <Esc>
 
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
