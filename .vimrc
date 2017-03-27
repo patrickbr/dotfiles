@@ -140,6 +140,8 @@ autocmd FileType javascript setlocal expandtab shiftwidth=4 tabstop=4 softtabsto
 autocmd FileType cpp setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=81
 " YCM GoTo decl / def shortcut
 autocmd FileType cpp nmap gd :YcmCompleter GoTo<CR>
+" use clang-formatter for styling with google style
+autocmd FileType c,cpp setlocal equalprg=clang-format\ -style=Google
 
 " not only for C/C++, better bracket jumps
 map [[ ?{<CR>w99[{
