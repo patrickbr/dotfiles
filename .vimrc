@@ -17,6 +17,13 @@ Plugin 'Valloric/YouCompleteMe'
 " vim-go
 Plugin 'fatih/vim-go'
 
+" ultisnips
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "" user interface
 
