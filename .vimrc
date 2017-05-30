@@ -27,6 +27,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "" user interface
 
+" highlight line in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
+
 " leader key
 let mapleader = "\\"
 
