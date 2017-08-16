@@ -141,7 +141,6 @@ autocmd BufRead *
       \ exec "set path^=".s:default_path
 
 " =========== CSS =============
-
 autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " =========== VIM  =============
@@ -162,6 +161,9 @@ map [[ ?{<CR>w99[{
 map ][ /}<CR>b99]}
 map ]] j0[[%/{<CR>
 map [] k$][%?}<CR>
+
+" ========== Latex ==========
+autocmd Filetype tex,latex set spelllang=en_us spell
 
 " ========== Go =============
 au BufRead,BufNewFile *.go setfiletype go
