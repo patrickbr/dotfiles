@@ -191,6 +191,8 @@ let g:go_highlight_string_spellcheck = 0
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 cindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 " YCM GoTo decl / def shortcut
 autocmd FileType python nmap gd :YcmCompleter GoTo<CR>
+" use autopep8
+autocmd FileType python setlocal equalprg=autopep8\ -
 
 " ========= book ===========
 au BufRead,BufNewFile *.book setfiletype manuscript
