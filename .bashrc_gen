@@ -1,6 +1,11 @@
 # use vi mode for bash
 set -o vi
 
+# set color
+if [ "$TERM" == "xterm" ]; then
+	export TERM=xterm-256color
+fi
+
 # use jk as vi escape
 bind -m vi-insert '"jk":vi-movement-mode'
 bind -m vi-command '"gg":beginning-of-history'
