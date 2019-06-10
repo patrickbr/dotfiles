@@ -192,7 +192,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 
 " YCM GoTo decl / def shortcut
 autocmd FileType python nmap gd :YcmCompleter GoTo<CR>
 " use autopep8
-autocmd FileType python setlocal equalprg=autopep8\ -
+autocmd FileType python setlocal equalprg=autopep8\ -aa\ -
 
 " ========= book ===========
 au BufRead,BufNewFile *.book setfiletype manuscript
