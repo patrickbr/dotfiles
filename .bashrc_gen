@@ -73,6 +73,9 @@ if ! type -t __git_ps1 &>/dev/null; then
 	alias __git_ps1="git branch 2>/dev/null | grep '*' | sed 's/* \(.*\)/(\1)/'"
 fi
 
+# nice memory usage
+alias mem='LANGUAGE=en_US free | awk -v green="$(tput setaf 2)" -v reset="$(tput sgr0)" -v orange="$(tput setaf 3)" -v red="$(tput setaf 1 && tput bold)" '\''/Mem/{printf("memuse: %s%.0f% (%.1fG/%.1fG)%s"), ($3/$2>0.8)?red:($3/$2>0.6)?orange:green, $3/$2*100, $3 / 1000000, $2 / 1000000,reset} /buffers\/cache/{printf(", buffers: %.1f%"), $4/($3+$4)*100} /Swap/{printf(", swp: %s%.0f%"), ($3/$2>0.8)?red:($3/$2>0.6)?orange:green, $3/$2*100}'\'
+
 # color stuff
 if type -t tput &> /dev/null 2>&1 && [[ $(tput -T$TERM colors) -ge 8 ]]; then
 	# use sexy prompt
